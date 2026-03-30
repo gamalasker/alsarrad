@@ -1,0 +1,57 @@
+baseURL: "https://gamalasker.github.io/alsarrad/"
+languageCode: "ar"
+title: "السرّاد - قصص وروايات"
+theme: "PaperMod"
+defaultContentLanguage: "ar"
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author: "السرّاد"
+  description: "موقع لنشر القصص والروايات العربية"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  direction: "rtl"
+  defaultTheme: "auto"
+  disableThemeToggle: false
+  ShowCodeCopyButtons: true
+
+  homeInfoParams:
+    Title: "مرحبًا بكم في السرّاد 📖"
+    Content: >
+      موقع السرّاد هو مساحة إبداعية لنشر القصص والروايات العربية.
+      هنا ستجدون عوالم من الخيال والمغامرة والغموض والرومانسية،
+      مكتوبة بقلم عربي أصيل لعشاق الأدب والقراءة.
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/gamalasker/alsarrad"
+
+menu:
+  main:
+    - name: "الرئيسية"
+      url: "/"
+      weight: 1
+    - name: "القصص"
+      url: "/posts/"
+      weight: 2
+    - name: "التصنيفات"
+      url: "/categories/"
+      weight: 3
+    - name: "عن الموقع"
+      url: "/about/"
+      weight: 4
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod

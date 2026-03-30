@@ -1,0 +1,193 @@
+/* ===================================================
+   السرّاد — تنسيقات مخصصة للغة العربية واتجاه RTL
+   =================================================== */
+
+/* استيراد خط Cairo من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ========================
+   الإعدادات الأساسية - RTL
+   ======================== */
+body {
+  font-family: 'Cairo', 'Arial', sans-serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 1.9;
+}
+
+/* إعادة توجيه العناصر الرئيسية */
+.post-content,
+.post-header,
+.post-footer,
+article,
+.main,
+header,
+footer,
+nav {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========================
+   الترويسة والتنقل
+   ======================== */
+.nav {
+  flex-direction: row-reverse;
+}
+
+.logo {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* ========================
+   محتوى القصص والمقالات
+   ======================== */
+.post-content {
+  font-family: 'Amiri', 'Cairo', serif;
+  font-size: 1.15rem;
+  line-height: 2.1;
+  color: #2c2c2c;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
+
+.post-content p {
+  margin-bottom: 1.4rem;
+  text-indent: 2em;
+}
+
+/* ========================
+   الاقتباسات
+   ======================== */
+.post-content blockquote {
+  border-right: 4px solid #c8963e;
+  border-left: none;
+  padding-right: 1.5rem;
+  padding-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  color: #555;
+  background-color: #faf7f0;
+  border-radius: 4px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* ========================
+   عنوان المقالة
+   ======================== */
+.post-title {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+/* ========================
+   معلومات المقالة (تاريخ، قراءة، إلخ)
+   ======================== */
+.post-meta {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========================
+   التصنيفات والوسوم
+   ======================== */
+.post-tags,
+.post-categories {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========================
+   الصفحة الرئيسية - بطاقات القصص
+   ======================== */
+.post-entry {
+  direction: rtl;
+}
+
+.entry-header,
+.entry-content,
+.entry-footer {
+  text-align: right;
+}
+
+/* ========================
+   فاصل المحتوى
+   ======================== */
+.post-content hr {
+  border: none;
+  border-top: 2px solid #e8e0d0;
+  margin: 2.5rem auto;
+  width: 60%;
+}
+
+/* ========================
+   معلومات المرحبا (Home Info)
+   ======================== */
+.home-info-container {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========================
+   أزرار المشاركة والتنقل
+   ======================== */
+.share-buttons {
+  direction: rtl;
+}
+
+.paginav {
+  direction: rtl;
+}
+
+.paginav .prev {
+  order: 2;
+}
+
+.paginav .next {
+  order: 1;
+}
+
+/* ========================
+   تحسين للشاشات الصغيرة
+   ======================== */
+@media (max-width: 768px) {
+  .post-content {
+    font-size: 1.05rem;
+    line-height: 2;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========================
+   الوضع الليلي - Dark Mode
+   ======================== */
+.dark .post-content {
+  color: #e0d8c8;
+}
+
+.dark .post-content blockquote {
+  background-color: #2a2520;
+  color: #c8b88a;
+}
+
+.dark .post-content h1,
+.dark .post-content h2,
+.dark .post-content h3,
+.dark .post-content h4 {
+  color: #f0e8d0;
+}
